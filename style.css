@@ -33,10 +33,10 @@
     text-align: center;
 }
 #firstone{
-font-family: "Bookinsanity Bold";
-text-align: center;
-font-size: 50px;
-background-color: rgb(49, 45, 45)
+    font-family: "Bookinsanity Bold";
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(49, 45, 45);
 }
 @font-face {
     font-family: "Scaly Sans Caps";
@@ -56,19 +56,31 @@ background-color: rgb(49, 45, 45)
     font-family: "Solbera Imitation";
     src: url("https://rawcdn.githack.com/jonathonf/solbera-dnd-fonts/master/Zatanna Misdirection/Zatanna Misdirection.otf") format("opentype");
 }
+
+/* Overall Text Font */
+* {
+    font-family: "Arial", Arial;
+    font-size: 1em;
+}
+
 body {
     background-image: radial-gradient(rgb(255, 1, 1), rgb(34, 31, 31));
-  }
-  #relative {
+}
+
+#relative {
     position: relative;
     left: 10px;
     border: 3px solid;
-  }
+}
+
 #top{
     background-color: rgb(49, 45, 45);
     margin-bottom: -125px;
     margin-top: -125px;
 }
+
+/* Top Header */
+
 #links {
     list-style-type: none;
     margin: 0;
@@ -77,11 +89,8 @@ body {
     background-color: #333;
 }
   
-#link-item {
+.link-item {
     float: left;
-}
-  
-#link-item a {
     display: block;
     color: white;
     text-align: center;
@@ -89,7 +98,7 @@ body {
     text-decoration: none;
 }
   
-#link-item a:hover:not(.active) {
+.link-item:hover:not(.active) {
     background-color: #111;
 }
   
@@ -97,6 +106,76 @@ body {
     background-color: #4CAF50;
 }
 
-#share {
-    color: yellow;
+/* The Share Modal */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
+
+/* Modal Content */
+.share-modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 35%;
+  text-align: center;
+}
+
+.closeModal {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeModal:hover,
+.closeModal:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.share-icons {
+    font-size: 350%;
+    margin: .5em;
+    color: inherit;
+    text-decoration: none;
+}
+
+#share-twitter {
+    color: lightskyblue;
+}
+
+#share-facebook {
+    color: #38A1F3;
+}
+#share-instagram {
+    color: #000000
+}
+#share-reddit {
+    color: #FF5700;
+}
+
+#share-modal-text {
+    font-size: 1.5em;
+    font-family: "Arial", Arial;
+}
+
+#social-media-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
