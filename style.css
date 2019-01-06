@@ -31,6 +31,11 @@
     font-family: "Nodesto Caps Condensed Bold";
     font-size: 170px;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.subtitle{
+    font-size: 70px;
 }
 #firstone{
     font-family: "Bookinsanity Bold";
@@ -74,16 +79,18 @@ body {
 }
 
 #top{
-    background-color: rgb(49, 45, 45);
-    margin-bottom: -125px;
-    margin-top: -125px;
+    background-image: url(./Webpage\ home.png);
+    background-position: center;
+    height: 500px;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 /* Top Header */
 
 #links {
     list-style-type: none;
-    margin: 0;
+    margin-bottom: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
