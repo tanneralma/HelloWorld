@@ -4,6 +4,42 @@
     font-size: 1em;
 }
 
+/* Top Header */
+
+#header {
+    height: 3em;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+#links {
+    list-style-type: none;
+    vertical-align: middle;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+.link-item {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+  
+.link-item:hover:not(.active) {
+    background-color: #111;
+}
+  
+.active {
+    background-color: #4CAF50;
+}
+
 
 /* Site Title */
 .dungeontech{
@@ -38,41 +74,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-/* Top Header */
-
-#header {
-    height: 50px;
-    margin: 0;
-    padding: 0;
-    background-color: #333;
-}
-
-#links {
-    list-style-type: none;
-    margin-top: 8px;
-    margin-bottom: 0;
-    padding: 0;
-    overflow: hidden;
-}
-  
-.link-item {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-  
-.link-item:hover:not(.active) {
-    background-color: #111;
-}
-  
-.active {
-    background-color: #4CAF50;
-}
-
 /* The Share Modal */
 
 .modal {
@@ -90,15 +91,28 @@ body {
 }
 
 /* Modal Content */
+
 .share-modal-content {
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #888;
-  width: 35%;
+  width: 40em;
+  height: 20em;
   text-align: center;
-  height: 220px;
   border-radius: 20px;
+  display: block;
+  position: relative;
+}
+
+.share-modal-info {
+    margin: 0;
+    padding: 0;
+    width: 35em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .closeModal {
@@ -115,6 +129,7 @@ body {
   cursor: pointer;
 }
 
+/* Icons */
 .share-icons {
     font-size: 350%;
     margin: .5em;
@@ -148,3 +163,15 @@ body {
     overflow: hidden;
 }
 
+.input-field {
+    width: 25em;
+    height: 3em;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    cursor: pointer;
+}

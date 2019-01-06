@@ -1,18 +1,17 @@
+// Open on click
 function openShareModal() {
-    //Get the share link
+    //G et the share link
     var shareLink = document.getElementById('shareModalText');
     
     // Get the modal
-    var shareModal = document.getElementById('shareModal');
+    var shareModal = document.getElementById('share-modal');
 
     // Get the <span> element that closes the modal
     var spanModal = document.getElementsByClassName('closeModal')[0];
 
     // When the user clicks the button, open the modal 
-    shareLink.onclick = function() {
-        shareModal.style.display = "block";
-    }
-
+    shareModal.style.display = "block";
+    
     // When the user clicks on <span> (x), close the modal
     spanModal.onclick = function() {
         shareModal.style.display = "none";
@@ -25,3 +24,12 @@ function openShareModal() {
         }
     }
 }
+
+// Copy to clipboard on click
+function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).val()).select();
+    document.execCommand("copy");
+    $temp.remove();
+  }
