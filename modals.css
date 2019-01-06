@@ -1,4 +1,4 @@
-/* The Share Modal */
+/* Universal Modal Properties (Applies to all modals) */
 
 .modal {
     display: none; /* Hidden by default */
@@ -14,7 +14,61 @@
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content */
+.close-modal {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-info {
+    margin: 0;
+    padding: 0;
+    width: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* About-Me Modal */
+
+.about-me-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 40em;
+    height: 20em;
+    text-align: center;
+    border-radius: 20px;
+    display: block;
+    position: relative;
+  }
+
+/* Contact Modal */
+
+.contact-me-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 40em;
+    height: 20em;
+    text-align: center;
+    border-radius: 20px;
+    display: block;
+    position: relative;
+  }
+
+/* The Share Modal */
 
 .share-modal-content {
   background-color: #fefefe;
@@ -29,55 +83,13 @@
   position: relative;
 }
 
-.share-modal-info {
-    margin: 0;
-    padding: 0;
-    width: 35em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+/* Social Media Icons */
 
-.closeModal {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.closeModal:hover,
-.closeModal:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Icons */
 .share-icons {
     font-size: 350%;
     margin: .5em;
     color: inherit;
     text-decoration: none;
-}
-
-#share-twitter {
-    color: lightskyblue;
-}
-
-#share-facebook {
-    color: #38A1F3;
-}
-#share-instagram {
-    color: #000000
-}
-#share-reddit {
-    color: #FF5700;
-}
-
-#share-modal-text {
-    font-size: 1.5em;
-    font-family: "Arial", Arial;
 }
 
 #social-media-list {
@@ -87,7 +99,28 @@
     overflow: hidden;
 }
 
-.input-field {
+#share-twitter {
+    color: lightskyblue;
+}
+
+#share-facebook {
+    color: #38A1F3;
+}
+
+#share-instagram {
+    color: #000000
+}
+
+#share-reddit {
+    color: #FF5700;
+}
+
+#share-modal-text {
+    font-size: 1.5em;
+    font-family: "Arial", Arial;
+}
+
+#input-field-url {
     width: 25em;
     height: 3em;
     padding: 12px 20px;
