@@ -1,26 +1,23 @@
-// Open on click
-function openShareModal() {
-    //G et the share link
-    var shareLink = document.getElementById('shareModalText');
-    
+// Open modal on click
+function openModal(modal, spanModal) {
     // Get the modal
-    var shareModal = document.getElementById('share-modal');
+    var modal = document.getElementById(modal);
 
     // Get the <span> element that closes the modal
-    var spanModal = document.getElementsByClassName('closeModal')[0];
+    var spanModal = document.getElementById(spanModal);
 
     // When the user clicks the button, open the modal 
-    shareModal.style.display = "block";
+    modal.style.display = "block";
     
     // When the user clicks on <span> (x), close the modal
     spanModal.onclick = function() {
-        shareModal.style.display = "none";
+        modal.style.display = "none";
     }
   
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
-        if (event.target == shareModal) {
-            shareModal.style.display = "none";
+        if (event.target == modal) {
+            modal.style.display = "none";
         }
     }
 }
