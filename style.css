@@ -7,10 +7,13 @@
 /* Top Header */
 
 #header {
-    height: 3em;
+    height: 3.5em;
     margin: 0;
     padding: 0;
-    background-color: #333;
+    background-color: rgb(0, 0, 0);
+    color: red;
+    border-bottom: 1em;
+    
 }
 
 #links {
@@ -33,7 +36,7 @@
 }
   
 .link-item:hover:not(.active) {
-    background-color: #111;
+    background-color: rgb(48, 47, 47);
 }
   
 .active {
@@ -44,13 +47,12 @@
 /* Site Title */
 .dungeontech{
     font-family: "Nodesto Caps Condensed Bold";
-    font-size: 170px;
+    font-size: 140px;
     text-align: left;
-    background: rgb(255, 0, 0);
-    -webkit-text-stroke-width: 7px;
+    -webkit-text-stroke-width: 5px;
     -webkit-text-stroke-color: black;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: red;
     margin-top: 0;
     margin-bottom: 0;
     text-shadow: 2px 2px 19px rgba(0, 0, 0, 0.6);;
@@ -58,16 +60,14 @@
 .subtitle{
     font-size: 80px;
     font-family: "Solbera Imitation";
-text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
 }
 .subtitle1{
     font-size: 55px;
     font-family: "Solbera Imitation";
-text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
 }
 /* Site Info */
 body {
-    background-image: radial-gradient(rgb(255, 1, 1), rgb(34, 31, 31));
+    background-image: url(./unnamed.jpg);
     margin: 0;
     padding: 0;
 }
@@ -80,9 +80,19 @@ body {
 }
 
 #top{
-    background-image: url(./Webpage\ home.png);
+    background-image: url(./Website-top.png);
     background-position: center;
     height: 500px;
     margin: 0;
     padding: 0;
+}
+#main-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    align-content: center;
+}
+.grid{
+margin-left: auto;
+margin-right: auto;
 }
