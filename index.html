@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
+        <head>
+                <link rel="stylesheet" type="text/css" href="./style.css">
+                <link rel="stylesheet" type="text/css" href="./modals.css">
+                <link rel="stylesheet" type="text/css" href="./fonts.css"> 
+                <!--Font Awesome Icons-->        
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+                <!--Bring in JQUERY-->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                <script src="./script.js"></script>
+                <title>Dungeontech</title>
+        </head>
 
-<head>
-        <link rel="stylesheet" type="text/css" href="./style.css">
-        <link rel="stylesheet" type="text/css" href="./modals.css">
-        <link rel="stylesheet" type="text/css" href="./fonts.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-                crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="./script.js"></script>
-        <title>Dungeontech</title>
-</head>
+        <body>
 
-<body>
-
+        <!--Top Header-->
         <div id="header">
                 <ul id="links">
                         <li><a class="link-item" href="#" onclick="openModal('about-me-modal', 'close-modal-about-me')">About
@@ -23,8 +24,9 @@
                 </ul>
         </div>
 
+        <!--About-Me Modal-->
         <div id="about-me-modal" class="modal">
-                <div class="about-me-modal-content">
+                <div id="about-me-modal-content" class="modal-content">
                         <span id="close-modal-about-me" class="close-modal">&times;</span>
                         <div class="modal-info">
                                 <p>I'm a pretty cool dm fam</p>
@@ -32,8 +34,9 @@
                 </div>
         </div>
 
+        <!--Contact-Me Modal-->
         <div id="contact-me-modal" class="modal">
-                <div class="contact-me-modal-content">
+                <div id="contact-me-modal-content" class="modal-content">
                         <span id="close-modal-contact-me" class="close-modal">&times;</span>
                         <div class="modal-info">
                                 <p>You can contact me by calling out, <br> "TANNY TAN TAN FRICKIN HEATON" ten times</p>
@@ -41,8 +44,9 @@
                 </div>
         </div>
 
+         <!--Share Modal-->
         <div id="share-modal" class="modal">
-                <div class="share-modal-content">
+                <div id="share-modal-content" class="modal-content">
                         <span id="close-modal-share" class="close-modal">&times;</span>
                         <div class="modal-info">
                                 <p id="share-modal-text">Share my website on your favorite platforms!</p>
@@ -58,58 +62,39 @@
                 </div>
         </div>
 
+        <!--Front Picture Text-->
         <div id="top">
                 <h1 class="dungeontech">Dungeon Tech Official</h1>
                 <h1 class="subtitle">Welcome, Thine bold explorer!</h1>
                 <h1 class="subtitle1"></h1>
         </div>
+        
+        <br>
+        <br>
+        <br>
+        
+        <!--Cards Layout-->
+        <div id="main-content">
+                <div class="grid card">  
+                        <a href="./Dungeons.html" target="_blank"><img src="./Dungeon.jpg" alt="the door to unlock infinite dungeon capabilities" width=auto length=auto 90> </a>
+                        <h3 class="container">Make deep, dark Dungeons!</h3> 
+                </div>
 
-        <div id="firstone">
+                <div class="grid card">
+                        <a href="./Towers.html" target="_blank"><img src="./Tower.jpg" alt="A great tower looming over these lands" width=750 length=422> </a>
+                        <h3 class="container">Make Mejestic towers!</h3>
+                </div>  
+                
+                <div class="grid card">
+                        <a href="./Settlements.html" target="_blank"><img src="./Settlement.jpg" alt="The great city of thalanor, standing tall and true" width=750 length=422> </a> 
+                        <h3 class="container">Make foreign settlements!</h3>
+                </div>
+                
+                <div class="grid card">
+                        <a href="./Mansions, housholds.html" target="_blank"><img src="./Mansion.jpg" alt="Haunted manshion long forgotten by the people, enter at your own risk!" width=750 length=422></a>
+                        <h3 class="container">Make omnipresent mansion or household's!</h3>
+                </div>
         </div>
-
-        <ol>
-                <li><a href="#Dungeons">Dungeon creation</a></li>
-                <li><a href="#Towers">Tower creation</a></li>
-                <li><a href="#Settlements">Settlement creation</a></li>
-                <li><a href="#Mansions/households">Mansion/household creation</a></li>
-        </ol>
-        <ul>
-                <div id="Main-content" style= "display: inline-block;">
-                        <li>
-                                <div id="Dungeons">
-                                        <!--1,920 × 1,080 pixels-->
-                                        <a href="./Dungeons.html" target="_blank"><img src="./Dungeon door.png" alt="the door to unlock infinite dungeon capabilities"
-                                                        width="30%" length="30%" 90> </a>
-                                        <h3 class="red">Make deep, dark Dungeons!</h3>
-                                </div>
-                        </li>
-                        <li>
-                                <div id="Towers">
-                                        <a href="./Towers.html" target="_blank"><img src="./Wizard tower.jpg" alt="A great tower looming over these lands"
-                                                        width="10%" length="10%"> </a>
-                                        <h3 class="red">Make Mejestic towers!</h3>
-
-                                </div>
-                        </li>
-                        <li>
-                                <div id="Settlements">
-                                        <a href="./Settlements.html" target="_blank"><img src="./Urban settlement.jpg"
-                                                        alt="The great city of thalanor, standing tall and true" width="50%"
-                                                        length="50%"> </a>
-                                        <h3>Make foreign settlements!</h3>
-
-                                </div>
-                        </li>
-
-                        <li>
-                                <div id="Mansions/households">
-                                        <a href="./Mansions, housholds.html" target="_blank"><img src="./HauntedMansion.jpg"
-                                                        alt="Haunted manshion long forgotten by the people, enter at your own risk!"></a>
-                                        <h3 id="Mansions/households">Make omnipresent mansion or household's!</h3>
-                        </li>
-                </div>
-                </div>
-        </ul>
 
         <div id="Explination">
                 <h1>Why make this website?</h1>

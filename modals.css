@@ -15,17 +15,17 @@
 }
 
 .close-modal {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .close-modal:hover,
 .close-modal:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .modal-info {
@@ -38,49 +38,36 @@
     transform: translate(-50%, -50%);
 }
 
-/* About-Me Modal */
-
-.about-me-modal-content {
+.modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 10px;
     border: 1px solid #888;
-    width: 40em;
-    height: 20em;
     text-align: center;
     border-radius: 20px;
     display: block;
     position: relative;
-  }
+}
+
+/* About-Me Modal */
+
+#about-me-modal-content {
+    width: 60em;
+    height: 30em;
+ }
 
 /* Contact Modal */
 
-.contact-me-modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 10px;
-    border: 1px solid #888;
-    width: 40em;
-    height: 20em;
-    text-align: center;
-    border-radius: 20px;
-    display: block;
-    position: relative;
-  }
+#contact-me-modal-content {
+    width: 60em;
+    height: 30em;
+}
 
 /* The Share Modal */
 
-.share-modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 10px;
-  border: 1px solid #888;
-  width: 40em;
-  height: 20em;
-  text-align: center;
-  border-radius: 20px;
-  display: block;
-  position: relative;
+#share-modal-content {
+    width: 40em;
+    height: 20em;
 }
 
 /* Social Media Icons */
