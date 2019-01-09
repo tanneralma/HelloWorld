@@ -29,4 +29,4 @@ function copyToClipboard(element) {
     $temp.val($(element).val()).select();
     document.execCommand("copy");
     $temp.remove();
-  }
+}

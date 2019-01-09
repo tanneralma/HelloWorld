@@ -17,13 +17,12 @@
         <!--Top Header-->
         <div id="header">
                 <ul id="links">
-                                <li><a class="logo-item"><img src="DungeonTech logo.png" width=25% length=25%> </img></li></a>
-                        <li><a class="link-item" href="#" onclick="openModal('about-me-modal', 'close-modal-about-me')">About
-                                        me</a></li>
+                        <li><a class="logo-item"><img src="DungeonTech logo.png" width=25% length=25%> </img></li></a>
+                        <li><a class="link-item" href="#" onclick="openModal('about-me-modal', 'close-modal-about-me')">About me</a></li>
                         <li><a class="link-item" href="#" onclick="openModal('contact-me-modal', 'close-modal-contact-me')">Contact</a></li>
                         <li><a class="link-item" href="#" onclick="openModal('share-modal', 'close-modal-share')">Share</a></li>
                 </ul>
-
+        </div>
 
         <!--About-Me Modal-->
         <div id="about-me-modal" class="modal">
@@ -62,37 +61,25 @@
                         </div>
                 </div>
         </div>
-</div>
+
         <!--Front Picture Text-->
         <div id="top">
                 <h1 class="dungeontech">Dungeon Tech Official</h1>
-                <h1 class="subtitle"></h1>
-                <h1 class="subtitle1"></h1>
         </div>
-        <br>
-        <br>
-        <div id="explination">
-                <h1>Why make this website?</h1>
-                <br>
-                <p>As a DM (dungeon master), I have expirienced great trouble with mapping out my campaign in dungeons
-                        and dragons. I often wished to have had faster, better mapping tools.
-                        With this, less than 2-minute video I have created, I will walk you through how to efecctivly
-                        use my website for better mapping expiriences as a DM.
-                        Keep in mind, that the maps created on this website were not ment to be perfect for your
-                        adventure, just to be an effective tool and give suggestions.
-                        Enjoy the tutorial!
-                </p>
-                <ul>
-                                <li>Video is less than 2 minutes</li>
-                                <li>Video could change the way you use this website.</li>
-                        </ul>
-                <video src="https://www.youtube.com/watch?v=hA6hldpSTF8" width="320" height="240" controls>Video not
-                        supported</video>
+
+        <div class="content-container">
+                <div id="explanation" class="text">
+                        <h1 class="article-title">Why make this website?</h1>
+
+                        <p>As a DM (dungeon master), I have expirienced great trouble with mapping out my campaign in dungeons
+                                and dragons. I often wished to have had faster, better mapping tools.
+                                With this, less than 2-minute video I have created, I will walk you through how to efecctivly
+                                use my website for better mapping expiriences as a DM.
+                                Keep in mind, that the maps created on this website were not ment to be perfect for your
+                                adventure, just to be an effective tool and give suggestions.
+                                Enjoy the tutorial!
+                        </p>
         </div>
-        
-        <br>
-        <br>
-        <br>
         
         <!--Cards Layout-->
         <div id="main-content" class="img">
@@ -126,6 +113,11 @@
                 dungeontech, have a great day!
         </p>
 
-</body>
+        </body>
+
+        <footer>
+                <!--This must be at the bottom because otherwise the rest of the HTML hasn't loaded when it assigns a variable-->
+                <script src="./header.js"></script>
+        </footer>
 
 </html>
