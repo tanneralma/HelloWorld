@@ -20,8 +20,8 @@
 /* Main container that content is held in */
 .center-content-container {
     overflow: visible;
-    margin-right: 15%;
-    margin-left: 15%;
+    margin-right: 10%;
+    margin-left: 10%;
     margin-top: 20px;
     text-align: left;
     align-content: left;
@@ -84,7 +84,7 @@
 }
 
 .link-item:hover:not(.active) {
-    background-color: rgb(48, 47, 47);
+    background-color: rgb(0, 0, 0);
 }
 
 .active {
@@ -104,9 +104,9 @@
 /* Site Title */
 .dungeontech{
     font-family: "Nodesto Caps Condensed Bold";
-    font-size: 140px;
+    font-size: 110px;
     text-align: left;
-    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: black;
     background-clip: text;
     -webkit-text-fill-color: red;
