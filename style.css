@@ -7,7 +7,7 @@
 /* Top Header */
 
 #header {
-    height: 3.5em;
+    height: 4.5em;
     margin: 0;
     padding: 0;
     background-color: rgb(0, 0, 0);
@@ -27,7 +27,7 @@
 }
   
 .link-item {
-    float: left;
+    float: right;
     display: block;
     color: white;
     text-align: center;
@@ -36,7 +36,9 @@
     font-size: 1.2em;
     font-family: Mr Eaves Small Caps;
 }
-  
+.logo-item{
+    float: left;
+}
 .link-item:hover:not(.active) {
     background-color: rgb(48, 47, 47);
 }
