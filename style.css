@@ -1,7 +1,7 @@
 /* Overall Text Font */
 * {
-    font-family: "Arial", Arial;
-    font-size: 1em;
+    font-family: "Bookinsanity", "Arial";
+    font-size: 102%;
 }
 
 /* Overall Text Formatting / Margins */
@@ -9,14 +9,25 @@
     overflow: hidden;
 }
 
-.text {
-    margin-right: 20%;
-    margin-left: 20%;
+/* Centers content vertically and horizontally */
+.center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Main container that content is held in */
+.center-content-container {
+    overflow: visible;
+    margin-right: 15%;
+    margin-left: 15%;
     margin-top: 20px;
     text-align: left;
     align-content: left;
 }
 
+/* Article header */
 .article-title {
     text-align: left;
     margin-left: 0em;
@@ -34,7 +45,7 @@
     height: 4.5em;
     margin: 0;
     padding: 0;
-    background-color: rgb(0, 0, 0);
+    background-color: #1e1e1e;
     border-bottom: 5px solid red;
     position: -webkit-sticky;
     position: sticky;
@@ -64,19 +75,18 @@
     padding: 1.4em 16px;
     text-decoration: none;
     font-size: 1.2em;
-    font-family: Mr Eaves Small Caps;
+    font-family: "Mr Eaves Small Caps";
 
 }
+
 .logo-item{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
 }
+
 .link-item:hover:not(.active) {
     background-color: rgb(48, 47, 47);
 }
+
 .active {
     background-color: #4CAF50;
 }
@@ -113,6 +123,7 @@ body {
     background-image: url(./background-3.png);
     margin: 0;
     padding: 0;
+    border-bottom: 5px solid red;
 }
 
 #firstone{
@@ -122,7 +133,7 @@ body {
     background-color: rgb(49, 45, 45);
 }
 
-#main-content{
+#main-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1fr;
@@ -130,11 +141,21 @@ body {
     text-align: center;
 }
 
-.grid{
+.grid {
     margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 50px;
+ /*   margin-left: auto;
+    margin-right: auto;*/
+}
+
+.grid-left {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.grid-right {
+    margin-right: 0;
+    margin-left: auto;
 }
 
 /* CSS Cards  For Grid/Layout */
@@ -147,7 +168,7 @@ body {
 }
 
 .card:hover {
-  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
 }
 
 
@@ -159,6 +180,20 @@ img {
 .container {
   padding: 2px 16px;
 }
+
 #explination{
     text-align: center;
+}
+
+/* Footer */
+#footer {
+    background-color: #1e1e1e;
+    border-top: 5px solid red;
+    height: auto;
+    overflow: hidden;
+}
+
+.footer-text {
+    color: #ffffff;
+    margin-bottom: 3%;
 }

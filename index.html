@@ -1,123 +1,129 @@
 <!DOCTYPE html>
 <html>
         <head>
+                <!--CSS Stylesheets-->
                 <link rel="stylesheet" type="text/css" href="./style.css">
                 <link rel="stylesheet" type="text/css" href="./modals.css">
                 <link rel="stylesheet" type="text/css" href="./fonts.css"> 
-                <!--Font Awesome Icons-->        
+                <!-- Font Awesome Icons-->        
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
                 <!--Bring in JQUERY-->
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                <!--Bring in Javascript files-->
                 <script src="./script.js"></script>
+                <script src="./header.js"></script>
+                <!--Site Tab Title-->
                 <title>Dungeontech</title>
+                <!--Site Icon-->
+                <link rel="icon" href="./DungeonTech logo.jpg">
         </head>
 
         <body>
+                <!--Top Header-->
+                <div id="header">
+                        <ul id="links">
+                                <li><a class="center-content logo-item"><img src="DungeonTech logo.png" width=25% length=25%> </img></li></a>
+                                <li><a class="link-item" href="#" onclick="openModal('about-me-modal', 'close-modal-about-me')">About me</a></li>
+                                <li><a class="link-item" href="#" onclick="openModal('contact-me-modal', 'close-modal-contact-me')">Contact</a></li>
+                                <li><a class="link-item" href="#" onclick="openModal('share-modal', 'close-modal-share')">Share</a></li>
+                        </ul>
+                </div>
 
-        <!--Top Header-->
-        <div id="header">
-                <ul id="links">
-                        <li><a class="logo-item"><img src="DungeonTech logo.png" width=25% length=25%> </img></li></a>
-                        <li><a class="link-item" href="#" onclick="openModal('about-me-modal', 'close-modal-about-me')">About me</a></li>
-                        <li><a class="link-item" href="#" onclick="openModal('contact-me-modal', 'close-modal-contact-me')">Contact</a></li>
-                        <li><a class="link-item" href="#" onclick="openModal('share-modal', 'close-modal-share')">Share</a></li>
-                </ul>
-        </div>
-
-        <!--About-Me Modal-->
-        <div id="about-me-modal" class="modal">
-                <div id="about-me-modal-content" class="modal-content">
-                        <span id="close-modal-about-me" class="close-modal">&times;</span>
-                        <div class="modal-info">
-                                <p>I'm a pretty cool dm fam</p>
+                <!--About-Me Modal-->
+                <div id="about-me-modal" class="modal">
+                        <div id="about-me-modal-content" class="modal-content">
+                                <span id="close-modal-about-me" class="close-modal">&times;</span>
+                                <div class="modal-info center-content">
+                                        <p>I'm a pretty cool dm fam</p>
+                                </div>
                         </div>
                 </div>
-        </div>
 
-        <!--Contact-Me Modal-->
-        <div id="contact-me-modal" class="modal">
-                <div id="contact-me-modal-content" class="modal-content">
-                        <span id="close-modal-contact-me" class="close-modal">&times;</span>
-                        <div class="modal-info">
-                                <p>You can contact me by calling out, <br> "TANNY TAN TAN FRICKIN HEATON" ten times</p>
+                <!--Contact-Me Modal-->
+                <div id="contact-me-modal" class="modal">
+                        <div id="contact-me-modal-content" class="modal-content">
+                                <span id="close-modal-contact-me" class="close-modal">&times;</span>
+                                <div class="modal-info center-content">
+                                        <p>You can contact me by calling out, <br> "TANNY TAN TAN FRICKIN HEATON" ten times</p>
+                                </div>
                         </div>
                 </div>
-        </div>
 
-         <!--Share Modal-->
-        <div id="share-modal" class="modal">
-                <div id="share-modal-content" class="modal-content">
-                        <span id="close-modal-share" class="close-modal">&times;</span>
-                        <div class="modal-info">
-                                <p id="share-modal-text">Share my website on your favorite platforms!</p>
-                                <ul id="social-media-list">
-                                        <a href="https://twitter.com" target="_blank"><i id="share-twitter" class="share-icons fab fa-twitter"></i></a>
-                                        <a href="https://facebook.com" target="_blank"><i id="share-facebook" class="share-icons fab fa-facebook-f"></i></a>
-                                        <a href="https://instagram.com" target="_blank"><i id="share-instagram" class="share-icons fab fa-instagram"></i></a>
-                                        <a href="https://reddit.com" target="_blank"><i id="share-reddit" class="share-icons fab fa-reddit-alien"></i></a>
-                                </ul>
-                                <input type=button onclick="copyToClipboard('#input-field-url')" id="input-field-url"
-                                        value="https://tanny.com">
+                <!--Share Modal-->
+                <div id="share-modal" class="modal">
+                        <div id="share-modal-content" class="modal-content">
+                                <span id="close-modal-share" class="close-modal">&times;</span>
+                                <div class="modal-info center-content">
+                                        <p id="share-modal-text">Share my website on your favorite platforms!</p>
+                                        <ul id="social-media-list">
+                                                <a href="https://twitter.com" target="_blank"><i id="share-twitter" class="share-icons fab fa-twitter"></i></a>
+                                                <a href="https://facebook.com" target="_blank"><i id="share-facebook" class="share-icons fab fa-facebook-f"></i></a>
+                                                <a href="https://instagram.com" target="_blank"><i id="share-instagram" class="share-icons fab fa-instagram"></i></a>
+                                                <a href="https://reddit.com" target="_blank"><i id="share-reddit" class="share-icons fab fa-reddit-alien"></i></a>
+                                        </ul>
+                                        <input type=button onclick="copyToClipboard('#input-field-url')" id="input-field-url"
+                                                value="https://tanny.com">
+                                </div>
                         </div>
                 </div>
-        </div>
 
-        <!--Front Picture Text-->
-        <div id="top">
-                <h1 class="dungeontech">Dungeon Tech Official</h1>
-        </div>
-
-        <div class="content-container">
-                <div id="explanation" class="text">
-                        <h1 class="article-title">Why make this website?</h1>
-
-                        <p>As a DM (dungeon master), I have expirienced great trouble with mapping out my campaign in dungeons
-                                and dragons. I often wished to have had faster, better mapping tools.
-                                With this, less than 2-minute video I have created, I will walk you through how to efecctivly
-                                use my website for better mapping expiriences as a DM.
-                                Keep in mind, that the maps created on this website were not ment to be perfect for your
-                                adventure, just to be an effective tool and give suggestions.
-                                Enjoy the tutorial!
-                        </p>
-        </div>
-        
-        <!--Cards Layout-->
-        <div id="main-content" class="img">
-                <div class="grid card">  
-                        <a href="./Dungeons.html" target="_blank"><img src="./Dungeon.jpg" alt="the door to unlock infinite dungeon capabilities" width=562.5 length= 316.5> </a>
-                        <h3 class="container">Make deep, dark Dungeons!</h3> 
+                <!--Front Picture Text-->
+                <div id="top">
+                        <h1 class="dungeontech">Dungeon Tech Official</h1>
                 </div>
 
-                <div class="grid card">
-                        <a href="./Towers.html" target="_blank"><img src="./Tower.jpg" alt="A great tower looming over these lands" width=562.5 length=316.5> </a>
-                        <h3 class="container">Make Mejestic towers!</h3>
-                </div>  
-                
-                <div class="grid card">
-                        <a href="./Settlements.html" target="_blank"><img src="./Settlement.jpg" alt="The great city of thalanor, standing tall and true" width=562.5 length=316.5> </a> 
-                        <h3 class="container">Make foreign settlements!</h3>
+                <div class="content-container">
+                        <div id="explanation" class="center-content-container">
+                                <h1 class="article-title">Why make this website?</h1>
+
+                                <p>As a DM (dungeon master), I have expirienced great trouble with mapping out my campaign in dungeons
+                                        and dragons. I often wished to have had faster, better mapping tools.
+                                        With this, less than 2-minute video I have created, I will walk you through how to efecctivly
+                                        use my website for better mapping expiriences as a DM.
+                                        Keep in mind, that the maps created on this website were not ment to be perfect for your
+                                        adventure, just to be an effective tool and give suggestions.
+                                        Enjoy the tutorial!
+                                </p>
                 </div>
                 
-                <div class="grid card">
-                        <a href="./Mansions, housholds.html" target="_blank"><img src="./Mansion.jpg" alt="Haunted manshion long forgotten by the people, enter at your own risk!" width=562.5 length=316.5></a>
-                        <h3 class="container">Make omnipresent mansion or household's!</h3>
+                <!--Cards Layout-->
+                <div id="main-content" class="img center-content-container">
+                        <div class="grid grid-left card">  
+                                <a href="./Dungeons.html" target="_blank"><img src="./Dungeon.jpg" alt="the door to unlock infinite dungeon capabilities" width=562.5 length= 316.5> </a>
+                                <h3 class="container">Make deep, dark Dungeons!</h3> 
+                        </div>
+
+                        <div class="grid grid-right card">
+                                <a href="./Towers.html" target="_blank"><img src="./Tower.jpg" alt="A great tower looming over these lands" width=562.5 length=316.5> </a>
+                                <h3 class="container">Make Mejestic towers!</h3>
+                        </div>  
+                        
+                        <div class="grid grid-left card">
+                                <a href="./Settlements.html" target="_blank"><img src="./Settlement.jpg" alt="The great city of thalanor, standing tall and true" width=562.5 length=316.5> </a> 
+                                <h3 class="container">Make foreign settlements!</h3>
+                        </div>
+                        
+                        <div class="grid grid-right card">
+                                <a href="./Mansions, housholds.html" target="_blank"><img src="./Mansion.jpg" alt="Haunted manshion long forgotten by the people, enter at your own risk!" width=562.5 length=316.5></a>
+                                <h3 class="container">Make omnipresent mansion or household's!</h3>
+                        </div>
                 </div>
-        </div>
-        <br>
-        <br>
-
-        <h1>Thank you!</h1>
-
-        <p>You must be weary from slaying _______, and rescuing ______ great explorer! I hope ______ has treated thee
-                well. <br> Make sure to look out for ______! They always ________________. Thank you for using
-                dungeontech, have a great day!
-        </p>
 
         </body>
 
         <footer>
-                <!--This must be at the bottom because otherwise the rest of the HTML hasn't loaded when it assigns a variable-->
-                <script src="./header.js"></script>
+                <!--Footer-->
+                <div id="footer" class="content-container">
+                        <div class="center-content-container footer-text">
+                                <h1 class="article-title footer-title">Thank you!</h1>
+
+                                <p>You must be weary from slaying _______, and rescuing ______ great explorer! I hope ______ has treated thee
+                                        well. Make sure to look out for ______! They always ________________. Thank you for using
+                                        dungeontech, have a great day!
+                                </p>
+
+                        </div>
+                </div>
         </footer>
 
 </html>
