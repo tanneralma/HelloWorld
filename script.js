@@ -29,8 +29,18 @@ function copyToClipboard(element) {
     $temp.val($(element).val()).select();
     document.execCommand("copy");
     $temp.remove();
-// Drag and drop grid
 }
+//word randomizer
+var myArrayOne = [
+    "Apples",
+    "Bananas",
+    "Pears"
+  ];
+  
+  var randomItem = myArrayOne[Math.floor(Math.random()*myArray.length)];
+    document.footer.innerHTML = randomItem;
+// Drag and drop grid
+
 function allowDrop(ev) {
     ev.preventDefault();
   }
@@ -43,4 +53,4 @@ function allowDrop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("./drop/Horizontal Hallway.jpg");
     ev.target.appendChild(document.getElementById(data));
-  }
+  } 
