@@ -132,8 +132,15 @@ img {
     text-align: center;
 }
 
-table {
-    margin: 0;
-    padding: 0;
-    border: 1px black;
+/* Footer */
+#footer {
+    background-color: #1e1e1e;
+    border-top: 5px solid red;
+    height: auto;
+    overflow: hidden;
+}
+
+.footer-text {
+    color: #ffffff;
+    margin-bottom: 3%;
 }

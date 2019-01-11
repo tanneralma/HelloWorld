@@ -30,3 +30,27 @@ function copyToClipboard(element) {
     document.execCommand("copy");
     $temp.remove();
 }
+//word randomizer
+var myArrayOne = [
+    "Apples",
+    "Bananas",
+    "Pears"
+  ];
+  
+  var randomItem = myArrayOne[Math.floor(Math.random()*myArray.length)];
+    document.footer.innerHTML = randomItem;
+// Drag and drop grid
+
+function allowDrop(ev) {
+    ev.preventDefault();
+  }
+  
+  function drag(ev) {
+    ev.dataTransfer.setData("./drop/Horizontal Hallway.jpg", ev.target.id);
+  }
+  
+  function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("./drop/Horizontal Hallway.jpg");
+    ev.target.appendChild(document.getElementById(data));
+  } 
