@@ -36,11 +36,11 @@ function allowDrop(ev) {
   }
   
   function drag(ev) {
-    ev.dataTransfer.setData("hallway", ev.target.id);
+    ev.dataTransfer.setData("./drop/Horizontal Hallway.jpg", ev.target.id);
   }
   
   function drop(ev) {
     ev.preventDefault();
-    var data = ev.dataTransfer.getData("hallway");
+    var data = ev.dataTransfer.getData("./drop/Horizontal Hallway.jpg");
     ev.target.appendChild(document.getElementById(data));
   }
