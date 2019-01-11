@@ -15,6 +15,21 @@
      <!--Site Icon-->
      <link rel="icon" href="./images/DungeonTech logo.png">
  <title>dungeontech/Dungeons</title>
+                <script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("tile", ev.target.src);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("tile");
+  ev.target.src = data;
+}
+                </script>
 </head>
 <body>
        <!--Top Header-->
@@ -61,6 +76,7 @@
                 </div>
         </div>
 </div>
+
 
 <h3>Make a dungeon!</h3>
 <br>
@@ -170,6 +186,37 @@
     <div id="div1" class="grid1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     <div id="div1" class="grid1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     <div id="div1" class="grid1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    <table border="0" cellspacing="0" cellpadding="0">
+        <row>
+                <td><img id="drag1" src="./drop/Horizontal Hallway.jpg" ondrop="drop(event)" ondragover="allowDrop(event)" width=50px height=50px></td>
+                <td><img id="drag1" src="./drop/Horizontal Hallway.jpg" ondrop="drop(event)" ondragover="allowDrop(event)" width=50px height=50px></td>
+                <td><img id="drag1" src="./drop/Horizontal Hallway.jpg" ondrop="drop(event)" ondragover="allowDrop(event)" width=50px height=50px></td>
+                <td><img id="drag1" src="./drop/Horizontal Hallway.jpg" ondrop="drop(event)" ondragover="allowDrop(event)" width=50px height=50px></td>
+                <td><img id="drag1" src="./drop/Horizontal Hallway.jpg" ondrop="drop(event)" ondragover="allowDrop(event)" width=50px height=50px></td>
+        </row>
+        <row>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+        </row>
+        <row>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+        </row>
+        <row>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+        </row>
+</table>
     <br>
     <img id="drag1" src="./drop/Horizontal Hallway.jpg" draggable="true" ondragstart="drag(event)" width=50px height=50px>
     <img id="drag1" src="./drop/Vertical Hallway.jpg" draggable="true" ondragstart="drag(event)" width=50px height=50px>
