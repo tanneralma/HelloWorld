@@ -10,7 +10,7 @@ function drag(dragevent) {
 
 function drop(dropevent) {
     dropevent.preventDefault();
-    var data = dropevent.dataTransfer.getData(text");
+    var data = dropevent.dataTransfer.getData("text");
     dropevent.target.appendChild(document.getElementById(data));
     document.getElementById("drag").style.color = 'black';
 }
