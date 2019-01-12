@@ -29,28 +29,18 @@ function copyToClipboard(element) {
     $temp.val($(element).val()).select();
     document.execCommand("copy");
     $temp.remove();
-}
-//word randomizer
-var myArrayOne = [
-    "Apples",
-    "Bananas",
-    "Pears"
-  ];
-  
-  var randomItem = myArrayOne[Math.floor(Math.random()*myArray.length)];
-    document.footer.innerHTML = randomItem;
 // Drag and drop grid
-
+}
 function allowDrop(ev) {
     ev.preventDefault();
   }
   
   function drag(ev) {
-    ev.dataTransfer.setData("./drop/Horizontal Hallway.jpg", ev.target.id);
+    ev.dataTransfer.setData("hallway", ev.target.id);
   }
   
   function drop(ev) {
     ev.preventDefault();
-    var data = ev.dataTransfer.getData("./drop/Horizontal Hallway.jpg");
+    var data = ev.dataTransfer.getData("hallway");
     ev.target.appendChild(document.getElementById(data));
-  } 
+  }
