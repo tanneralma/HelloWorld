@@ -31,16 +31,16 @@ function copyToClipboard(element) {
     $temp.remove();
 // Drag and drop grid
 }
-function allowDrop(ev) {
-    ev.preventDefault();
-  }
-  
-  function drag(ev) {
-    ev.dataTransfer.setData("hallway", ev.target.id);
-  }
-  
-  function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("hallway");
-    ev.target.appendChild(document.getElementById(data));
-  }
+function allowDrop(allowdropevent) {
+    allowdropevent.preventDefault();
+}
+
+function drag(dragevent) {
+    dragevent.dataTransfer.setData("imageSource", dragevent.target.src);
+}
+
+function drop(dropevent) {
+    dropevent.preventDefault();
+    var data = dropevent.dataTransfer.getData("imageSource");
+    dropevent.target.src = data;
+}
