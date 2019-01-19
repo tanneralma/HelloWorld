@@ -4,6 +4,119 @@
     <link rel="stylesheet" href="./test.css">
 </head>
 <body>
+        <p1>How many brave enough to enter?</p1>
+        <form action="/action_page.php">
+            <select name="adventurers" multiple>
+              <option value="2-adventurers">2</option>
+              <option value="3-adventurers">3</option>
+              <option value="4-adventurers">4</option>
+              <option value="5-adventurers">5</option>
+              <option value="6-adventurers">6</option>
+              <option value="7-adventurers">7</option>
+              <option value="8-adventurers">8</option>
+              <option value="9-adventurers">9</option>
+              <option value="10-adventurers">10</option>
+              <option value="11-adventurers">11</option>
+              <option value="12-adventurers">12</option>
+              <option value="13-adventurers">13</option>
+            </select>
+            </form>
+        <br>
+        <br>
+        <p>what level are they who enter?</p>
+        <form action="/action_page.php">
+            <select name="adventurer-level" multiple>
+              <option value="1-level">1st level</option>
+              <option value="2-level">2nd level</option>
+              <option value="3-level">3rd level</option>
+              <option value="4-level">4th level</option>
+              <option value="5-level">5th level</option>
+              <option value="6-level">6th level</option>
+              <option value="7-level">7th level</option>
+              <option value="8-level">8th level</option>
+              <option value="9-level">9th level</option>
+              <option value="10-level">10th level</option>
+              <option value="11-level">11th level</option>
+              <option value="12-level">12th level</option>
+              <option value="13-level">13th level</option>
+              <option value="14-level">14th level</option>
+              <option value="15-level">15th level</option>
+              <option value="16-level">16th level</option>
+              <option value="17-level">17th level</option>
+              <option value="18-level">18th level</option>
+              <option value="19-level">19th level</option>
+              <option value="20-level">20th level</option>
+            </select>
+            </form>
+            <br>
+            <br>
+        <p>is there to be secret treasure, rooms, or passages (per level)?</p>
+        <form action="/action_page.php">
+            <select name="secret rooms" multiple>
+              <option value="no-secret">none</option>
+              <option value="1-secret">1-3</option>
+              <option value="3-secret">3-5</option>
+              <option value="5-secret">5-7</option>
+              <option value="8-secret">8-10</option>
+              <option value="11-secret">11-13</option>
+              <option value="14-secret">14-17</option>
+              <option value="18-secret">18-20</option>
+              <option value="21-secret">21-24</option>
+            </select>
+            </form>
+              <br>
+              <br>
+              <p>How long the chasam within the earth, to oppose any who enter (per dungeon level)?</p>
+              <form action="/action_page.php">
+                <select name="secret rooms" multiple>
+              <option value="tiny">tiny</option>
+              <option value="small">small</option>
+              <option value="medium">medium</option>
+              <option value="large">large</option>
+              <option value="gargantuan">gargantuan</option>
+            </select>
+            </form>
+            <br>
+            <br>
+        <p>How deep may this dungeon go?</p>
+        <form action="/action_page.php">
+            <select name="dungeon-level" multiple>
+              <option value="1-levels">only 1 level</option>
+              <option value="2-levels">2 levels</option>
+              <option value="3-levels">3 levels</option>
+              <option value="4-levels">4 levels</option>
+              <option value="5-levels">5 levels</option>
+              <option value="6-levels">6 levels</option>
+              <option value="7-levels">7 levels</option>
+              <option value="8-levels">8 levels</option>
+              <option value="9-levels">9 levels</option>
+              <option value="10-levels">10 levels</option>
+            </select>
+            <input type="submit">
+            </form>
+            <br>
+            <br>
+            <p>Drag the hallway image into the square:</p>
+        
+            <div id="div1" class="grid1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div1" class="grid1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div1" class="grid1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div1" class="grid1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div1" class="grid1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div1" class="grid1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div1" class="grid1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div1" class="grid1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div1" class="grid1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div1" class="grid1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div1" class="grid1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div1" class="grid1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <br>
+            <img id="drag1" src="./drop/Horizontal Hallway.jpg" draggable="true" ondragstart="drag(event)" width=50px height=50px>
+            <img id="drag1" src="./drop/Vertical Hallway.jpg" draggable="true" ondragstart="drag(event)" width=50px height=50px>
+            <img id="drag1" src="./drop/Top left hallway turn.jpg" draggable="true" ondragstart="drag(event)" width=50px height=50px>
+            <img id="drag1" src="./drop/Top right hallway turn.jpg" draggable="true" ondragstart="drag(event)" width=50px height=50px>
+            <img id="drag1" src="./drop/Bottom left hallway turn.jpg" draggable="true" ondragstart="drag(event)" width=50px height=50px>
+            <img id="drag1" src="./drop/Bottom right hallway turn.jpg" draggable="true" ondragstart="drag(event)" width=50px height=50px>
 <div>
             <div><img src="./drop/Horizontal Hallway.jpg" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
             <div><img src="./drop/Horizontal Hallway.jpg" ondrop="drop(event)" ondragover="allowDrop(event)"></div>

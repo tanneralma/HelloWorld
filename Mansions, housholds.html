@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html>
-<head>
- <title>dungeontech/Households</title>
-</head>
+        <head>
+                <!--CSS Stylesheets-->
+                <link rel="stylesheet" type="text/css" href="./style.css">
+                <link rel="stylesheet" type="text/css" href="./modals.css">
+                <link rel="stylesheet" type="text/css" href="./fonts.css"> 
+                <!-- Font Awesome Icons-->        
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+                <!--Bring in JQUERY-->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                <!--Bring in Javascript files-->
+                <script src="./script.js"></script>
+                <script src="./header.js"></script>
+                <!--Site Tab Title-->
+                <title>dungeontech/dungeons</title>
+                <!--Site Icon-->
+                <link rel="icon" href="./images/DungeonTech logo.png">
+        </head>
+
+        <body>
+                <!--Top Header-->
+                <div id="header">
+                        <ul id="links">
+                                <li><a class="center-content logo-item" href="http://dungeontech.org"><img src="images/DungeonTech logo.png" width=28% length=28%> </img></li></a>
+                                <li><a class="link-item" href="#" onclick="openModal('about-me-modal', 'close-modal-about-me')">About me</a></li>
+                                <li><a class="link-item" href="#" onclick="openModal('contact-me-modal', 'close-modal-contact-me')">Contact</a></li>
+                                <li><a class="link-item" href="#" onclick="openModal('share-modal', 'close-modal-share')">Share</a></li>
+                        </ul>
+                </div>
+
+                <!--About-Me Modal-->
+                <div id="about-me-modal" class="modal">
+                        <div id="about-me-modal-content" class="modal-content">
+                                <span id="close-modal-about-me" class="close-modal">&times;</span>
+                                <div class="modal-info center-content">
+                                        <p>Tanner Heaton, is a student at "Karl G. Maeser prepratory acadamy." Tanner loves to spend time being a D&D dungeon master, playing ultimate frisbee, and programming!
+                                        <br> Honorable mentions:
+                                        <br> Tate cotton
+                                        <br> Corban Villa 
+                                        <br> Both of which, I send my highest regards for the help with my website!
+                                        </p>
+                                </div>
+                        </div>
+                </div>
+
+                <!--Contact-Me Modal-->
+                <div id="contact-me-modal" class="modal">
+                        <div id="contact-me-modal-content" class="modal-content">
+                                <span id="close-modal-contact-me" class="close-modal">&times;</span>
+                                <div class="modal-info center-content">
+                                        <p>Basic contact information, for any questions, comments, or concerns!<br>Gmail: tanneralma@gmail.com<br>Message me: 801-900-6954</p>
+                                </div>
+                        </div>
+                </div>
+
+                <!--Share Modal-->
+                <div id="share-modal" class="modal">
+                        <div id="share-modal-content" class="modal-content">
+                                <span id="close-modal-share" class="close-modal">&times;</span>
+                                <div class="modal-info center-content">
+                                        <p id="share-modal-text">Share my website on your favorite platforms!</p>
+                                        <ul id="social-media-list">
+                                                <a href="https://twitter.com" target="_blank"><i id="share-twitter" class="share-icons fab fa-twitter"></i></a>
+                                                <a href="https://facebook.com" target="_blank"><i id="share-facebook" class="share-icons fab fa-facebook-f"></i></a>
+                                                <a href="https://instagram.com" target="_blank"><i id="share-instagram" class="share-icons fab fa-instagram"></i></a>
+                                                <a href="https://reddit.com" target="_blank"><i id="share-reddit" class="share-icons fab fa-reddit-alien"></i></a>
+                                        </ul>
+                                        <input type=button onclick="copyToClipboard('#input-field-url')" id="input-field-url"
+                                                value="dungeontech.org">
+                                </div>
+                        </div>
+                </div>
 <body>
     
 <h1>Make a mansion/household</h1>
+<br>
+<h1><strong>UNDER DEVELOPMENT</strong></h1>
 
 </body>
 </html>

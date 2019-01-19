@@ -117,6 +117,13 @@
     margin-left: .8em;
     margin-top: .15em;
 }
+.title-understroke{
+    float: left;
+    left: 150px;
+    margin-top: -215px;
+    margin-left: .8em;
+    position: absolute;
+}
 
 /* Site Info */
 body {
@@ -126,11 +133,14 @@ body {
     border-bottom: 5px solid red;
 }
 
-#firstone{
-    font-family: "Bookinsanity Bold";
-    text-align: center;
-    font-size: 50px;
-    background-color: rgb(49, 45, 45);
+.firstone{
+    font-family: "Nodesto Caps Condensed";
+    text-align: left;
+    font-size: 60px;
+    color: white;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 2px 2px 19px rgb(0, 0, 1);
 }
 
 #main-content {
