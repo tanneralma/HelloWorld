@@ -105,7 +105,7 @@
 .dungeontech{
     font-family: "Nodesto Caps Condensed Bold";
     font-size: 110px;
-    text-align: left;
+    text-align: center;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: black;
     background-clip: text;
@@ -114,15 +114,16 @@
     margin-bottom: 0;
     text-shadow: 2px 2px 19px rgb(0, 0, 1);
     -webkit-text-fill-color: rgb(255, 255, 255);;  
-    margin-left: .8em;
     margin-top: .15em;
 }
 .title-understroke{
-    float: left;
-    left: 150px;
+    background-image: url(./D&D\ title\ understroke.png);
+    right: 0px;
+    text-align: center;
     margin-top: -215px;
-    margin-left: .8em;
-    position: absolute;
+    margin-left: 22em;
+    margin-bottom: 0px;
+    background-position: absolute;
 }
 
 /* Site Info */
@@ -134,13 +135,15 @@ body {
 }
 
 .firstone{
-    font-family: "Nodesto Caps Condensed";
-    text-align: left;
-    font-size: 60px;
+    font-family: "Nodesto Caps Condensed Bold";
+    text-align: center;
+    font-size: 80px;
     color: white;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: black;
     text-shadow: 2px 2px 19px rgb(0, 0, 1);
+    margin-top: -180px;
+    margin-bottom: 0;
 }
 
 #main-content {
@@ -150,33 +153,84 @@ body {
     align-content: center;
     text-align: center;
 }
-
+ .image1-align{
+     text-align: right;
+ }
 /*When the browser is less than 800px*/
 @media (max-width: 800px) {
     #main-content {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: 1fr;
-        align-content: left;
-        text-align: left;
+        align-content: center;
+        text-align: center;
     }
+
     .title-understroke{
-        float: left;
-        left: 40px;
+        background-image: url(./D&D\ title\ understroke.png);
+        right: 0px;
+        text-align: left;
         margin-top: -215px;
-        margin-left: .8em;
-        position: absolute;
+        margin-left: 4em;
+        margin-bottom: 0px;
+        background-position: absolute;
     }
+
     .logo-item{
     left: 125px;
     }
+
+    .firstone{
+        font-family: "Nodesto Caps Condensed Bold";
+        text-align: left;
+        font-size: 80px;
+        color: white;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: black;
+        text-shadow: 2px 2px 19px rgb(0, 0, 1);
+        margin-top: -190px;
+        margin-bottom: 0;
+    }
+
+    .dungeontech{
+        font-family: "Nodesto Caps Condensed Bold";
+        font-size: 110px;
+        text-align: left;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: black;
+        background-clip: text;
+        -webkit-text-fill-color: red;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-shadow: 2px 2px 19px rgb(0, 0, 1);
+        -webkit-text-fill-color: rgb(255, 255, 255);;  
+        margin-left: .8em;
+        margin-top: .15em;
+    }
+    .card {
+        background-color: #fefefe;
+        margin-top: 20px;
+        padding: 0px;
+        text-align: center;
+        border-radius: 20px;
+        display: block;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 562.5;
+        height: 474.75px;
+        border-radius: 5px;
+    }
+    .grid {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
  }
 
 .grid {
     margin-top: 50px;
     margin-bottom: 50px;
- /*   margin-left: auto;
-    margin-right: auto;*/
 }
 
 .grid-left {
@@ -192,11 +246,18 @@ body {
 /* CSS Cards  For Grid/Layout */
 
 .card {
+    background-color: #fefefe;
+    margin-top: 20px;
+    padding: 0px;
+    text-align: center;
+    border-radius: 20px;
+    display: block;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 843.75;
+    width: 562.5;
     height: 474.75px;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 .card:hover {
@@ -215,6 +276,10 @@ img {
 
 #explination{
     text-align: center;
+}
+#explinationimage1{
+    margin-right: 1px;
+    position: absolute;
 }
 
 /* Footer */
@@ -238,4 +303,48 @@ img {
   }
   .grid1 img{
     border-radius: 0;
+  }
+  /*bottom table*/
+  table {
+    table-layout: fixed;
+    width: 76%;
+    border-collapse: collapse;
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  thead th:nth-child(1) {
+    width: 30%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 20%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 20%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 35%;
+  }
+  
+  th, td {
+    padding: 20px;
+  }
+  thead th, tfoot th, tfoot td {
+    border: 3px solid rgb(0, 0, 0);
+  }
+  table {
+    background-color: #aaaaaa00;
+    border: 3px solid rgb(0, 0, 0);
+  }
+  tbody tr:nth-child(even) {
+    background-color: #aaaaaa00;
+    border: 3px solid rgb(0, 0, 0);
+  }
+  tbody tr:nth-child(odd) {
+    background-color: #aaaaaa00;
+    border: 3px solid rgb(0, 0, 0);
   }

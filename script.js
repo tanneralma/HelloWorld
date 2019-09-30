@@ -29,8 +29,8 @@ function copyToClipboard(element) {
     $temp.val($(element).val()).select();
     document.execCommand("copy");
     $temp.remove();
-// Drag and drop grid
 }
+// Drag and drop grid
 function allowDrop(allowdropevent) {
     allowdropevent.preventDefault();
 }
