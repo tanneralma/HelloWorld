@@ -224,13 +224,8 @@ body {
         margin: auto;
         margin-bottom: 20px;
     }
-.grid-left {
-    margin: auto;
-}
 
-.grid-right {
-    margin: auto;
-}
+}    
 
 /* CSS Cards  For Grid/Layout */
 
@@ -247,6 +242,15 @@ body {
     height: 474.75px;
     border-radius: 5px;
     object-fit: cover;
+}
+.grid-left {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.grid-right {
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .card:hover {
@@ -293,6 +297,8 @@ img {
   .grid1 img{
     border-radius: 0;
   }
+  
+  
   /*bottom table*/
   table {
     table-layout: fixed;
