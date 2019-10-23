@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
         <head>
-                <!--CSS Stylesheets-->
-                <link rel="stylesheet" type="text/css" href="./style.css">
-                <link rel="stylesheet" type="text/css" href="./modals.css">
-                <link rel="stylesheet" type="text/css" href="./fonts.css"> 
-                <!-- Font Awesome Icons-->        
+                <!-- Font Awesome Icons--> 
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+                <!--CSS Stylesheets-->
+                <link rel="stylesheet" type="text/css" href="./fonts.css"> 
+                <link rel="stylesheet" type="text/css" href="./modals.css">
+                <link rel="stylesheet" type="text/css" href="./style.css">
                 <!--Bring in JQUERY-->
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
                 <!--Bring in Javascript files-->
@@ -23,7 +23,7 @@
                 <div id="header">
                         <ul id="links">
                                 <li><a class="center-content logo-item" href="http://dungeontech.org"><img src="images/DungeonTech logo.png" width=28% length=28%> </img></li></a>
-                                <li><a class="link-item" href="#" onclick="openModal('about-me-modal', 'close-modal-about-me')">About me</a></li>
+                                <li><a class="link-item" href="#" onclick="openModal('about-me-modal', 'close-modal-about-me')">Sign up</a></li>
                                 <li><a class="link-item" href="#" onclick="openModal('contact-me-modal', 'close-modal-contact-me')">Contact</a></li>
                                 <li><a class="link-item" href="#" onclick="openModal('share-modal', 'close-modal-share')">Share</a></li>
                         </ul>
@@ -34,12 +34,37 @@
                         <div id="about-me-modal-content" class="modal-content">
                                 <span id="close-modal-about-me" class="close-modal">&times;</span>
                                 <div class="modal-info center-content">
-                                        <p>Tanner Heaton, is a student at "Karl G. Maeser prepratory acadamy." Tanner loves to spend time being a D&D dungeon master, playing ultimate frisbee, and programming!
-                                        <br> Honorable mentions:
-                                        <br> Tate cotton
-                                        <br> Corban Villa 
-                                        <br> Both of which, I send my highest regards for the help with my website!
-                                        </p>
+                                        <table>
+                                                <caption>Schedueling and available sessions</caption>
+                                                <thead>
+                                                  <tr>
+                                                    <th scope="col">Campaign</th>
+                                                    <th scope="col">Length</th>
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col">No. Of people</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <th scope="row">Beyond the wall</th>
+                                                    <td>10:00 - 2:00</td>
+                                                    <td>TBD</td>
+                                                    <td>0 adventurers</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">Bandit bash</th>
+                                                    <td>3:00 - 5:00</td>
+                                                    <td>TBD</td>
+                                                    <td>0 adventurers</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">The beast of Calmernock</th>
+                                                    <td>10:00-2:00</td>
+                                                    <td>TBD</td>
+                                                    <td>0 adventurers</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
                                 </div>
                         </div>
                 </div>
@@ -146,7 +171,7 @@
                                           <tr>
                                             <th scope="row">The beast of Calmernock</th>
                                             <td>10:00-2:00</td>
-                                            <td>10/05/2019</td>
+                                            <td>TBD</td>
                                             <td>0 adventurers</td>
                                           </tr>
                                         </tbody>
@@ -158,20 +183,20 @@
                                 </div>
                 <div id="main-content" class="img center-content-container">
                         <div class="grid grid-left card">  
-                                <a href="./Dungeons.html" target="_blank"><img src="./images/Dungeon.jpg" alt="the door to unlock infinite dungeon capabilities" width=562.5 length= 316.5> </a>
+                                <a href="./Dungeons.html" target="_blank"><img src="./images/Dungeon.jpg" alt="the door to unlock infinite dungeon capabilities"> </a>
                                 <h3 class="container">Universal character creation</h3> 
                                 <p class="container">Forgot which campaign your in? Click here to create a character that works for all campaigns.</p>
                         </div>
 
                         <div class="grid grid-right card">
-                                <a href="./Towers.html" target="_blank"><img src="./images/Tower.jpg" alt="A great tower looming over these lands" width=562.5 length=316.5> </a>
+                                <a href="./Towers.html" target="_blank"><img src="./images/Tower.jpg" alt="A great tower looming over these lands"> </a>
                                 <h3 class="container">Beyond the wall</h3>
                                 <p class="container">When the village Wealdstone is attacked by goblins, characters find themselves tasked with locating and terminating the threat.
                                         Do they have what is takes to bring the village borders to safety?</p>
                         </div>  
                         
                         <div class="grid grid-left card">
-                                <a href="./Settlements.html" target="_blank"><img src="./images/Settlement.jpg" alt="The great city of thalanor, standing tall and true" width=562.5 length=316.5> </a> 
+                                <a href="./Settlements.html" target="_blank"><img src="./images/Settlement.jpg" alt="The great city of thalanor, standing tall and true"> </a> 
                                 <h3 class="container">Bandit bash</h3>
                                 <p class="container">This short 2 hour session provides an opputunity for new kids to get a feel for the table. 
                                         A bandit encounter will show youth the basic elements of an RPG.
@@ -179,7 +204,7 @@
                         </div>
                         
                         <div class="grid grid-right card">
-                                <a href="./Mansions, housholds.html" target="_blank"><img src="./images/Mansion.jpg" alt="Haunted manshion long forgotten by the people, enter at your own risk!" width=562.5 length=316.5></a>
+                                <a href="./Mansions, housholds.html" target="_blank"><img src="./images/Mansion.jpg" alt="Haunted manshion long forgotten by the people, enter at your own risk!"></a>
                                 <h3 class="container">The beast of Calmernock</h3>
                                 <p class="container">A terrible beast has escaped custody from the town of Rutherglen and lord Slater has sent a bounty to stop its terror.</p>
                         </div>
@@ -195,7 +220,6 @@
 
                                 <p> Please, feel free to come back here whenever your heart desires! Web-optimization, better communication systems, and easier navigation are hoped to be accomplished in time!
                                      <br>   
-                                        <a link href="https://danddcubies.com/">Click here for (currently) FREE D&D Cubies! @dndcubies.com</a>
                                 </p>
 
                         </div>
