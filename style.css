@@ -4,6 +4,10 @@
     font-size: 102%;
 }
 
+p {
+    font-family: "Bookinsanity", "Arial";
+    font-size: 125%;
+}
 /* Overall Text Formatting / Margins */
 .content-container {
     overflow: hidden;
@@ -29,6 +33,7 @@
 
 /* Article header */
 .article-title {
+    font-family: "Bookinsanity";
     text-align: left;
     margin-left: 0em;
     margin-top: 1.5em;
@@ -81,10 +86,11 @@
 
 .logo-item{
     text-align: center;
+    margin-top: 0px;
 }
 
 .link-item:hover:not(.active) {
-    background-color: rgb(0, 0, 0);
+    border-bottom: 3px solid red;
 }
 
 .active {
@@ -270,6 +276,7 @@ img {
 #explination{
     text-align: center;
 }
+
 #explinationimage1{
     margin-right: 1px;
     position: absolute;
@@ -307,10 +314,11 @@ img {
     margin: auto;
     margin-bottom: 50px;
     text-align: center;
+    border: 1px solid black;
   }
   
   thead th:nth-child(1) {
-    width: 30%;
+    width: 20%;
   }
   
   thead th:nth-child(2) {
@@ -322,11 +330,11 @@ img {
   }
   
   thead th:nth-child(4) {
-    width: 35%;
+    width: 20%;
   }
   
   th, td {
-    padding: 20px;
+    padding: 10px;
   }
   thead th, tfoot th, tfoot td {
     border: 3px solid rgb(0, 0, 0);
